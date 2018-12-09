@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4217E1C021B6C3740075083C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CAE37521B6BE850011EE67 /* GLUT.framework */; };
+		429B730121B8008C00F880AB /* TriangleEBOView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 429B730021B8008C00F880AB /* TriangleEBOView.mm */; };
+		42B96E3F21B947A10009D503 /* ShadersView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42B96E3E21B947A10009D503 /* ShadersView.mm */; };
+		42B96E4221B94B8F0009D503 /* fragmentShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 42B96E4021B94B8F0009D503 /* fragmentShader.fsh */; };
+		42B96E4321B94B8F0009D503 /* vertexShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 42B96E4121B94B8F0009D503 /* vertexShader.vsh */; };
+		42B96E4621B94DFE0009D503 /* VertexAttributesView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42B96E4521B94DFE0009D503 /* VertexAttributesView.mm */; };
+		42B96E4921B94EF90009D503 /* attributes.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 42B96E4721B94EF80009D503 /* attributes.vsh */; };
+		42B96E4A21B94EF90009D503 /* attributes.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 42B96E4821B94EF90009D503 /* attributes.fsh */; };
+		42CAE33E21B6A00B0011EE67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAE33D21B6A00B0011EE67 /* AppDelegate.m */; };
+		42CAE34121B6A00B0011EE67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAE34021B6A00B0011EE67 /* ViewController.m */; };
+		42CAE34321B6A00D0011EE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42CAE34221B6A00D0011EE67 /* Assets.xcassets */; };
+		42CAE34621B6A00D0011EE67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42CAE34421B6A00D0011EE67 /* Main.storyboard */; };
+		42CAE34921B6A00D0011EE67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAE34821B6A00D0011EE67 /* main.m */; };
+		42CAE35421B6A00D0011EE67 /* DSLRMacViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAE35321B6A00D0011EE67 /* DSLRMacViewerTests.m */; };
+		42CAE36021B6A0790011EE67 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CAE35F21B6A0790011EE67 /* OpenGL.framework */; };
+		42CAE36321B6A1580011EE67 /* TriangleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42CAE36221B6A1580011EE67 /* TriangleView.mm */; };
+		42CAE36821B6A7150011EE67 /* SKShaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42CAE36621B6A7150011EE67 /* SKShaderLoader.cpp */; };
+		42CAE36C21B6A8670011EE67 /* passthrough.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 42CAE36A21B6A8670011EE67 /* passthrough.vsh */; };
+		42CAE36D21B6A8670011EE67 /* passthrough.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 42CAE36B21B6A8670011EE67 /* passthrough.fsh */; };
+		42CAE37021B6AAE00011EE67 /* SKRenderingEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42CAE36E21B6AAE00011EE67 /* SKRenderingEngine.cpp */; };
+		42CAE37321B6AEE70011EE67 /* triangle.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 42CAE37121B6AEE70011EE67 /* triangle.vsh */; };
+		42CAE37421B6AEE70011EE67 /* triangle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 42CAE37221B6AEE70011EE67 /* triangle.fsh */; };
+		42CAE37A21B6BF5D0011EE67 /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CAE37921B6BF5C0011EE67 /* libglfw.3.2.dylib */; };
+		42E4304021BBA9E400694BAC /* NSImage+GLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E4303F21BBA9E400694BAC /* NSImage+GLCategory.m */; };
+		42E4304321BBAC7200694BAC /* TextureTriangleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42E4304221BBAC7200694BAC /* TextureTriangleView.mm */; };
+		42E4304621BBAD2300694BAC /* textureTriangle.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 42E4304421BBAD2300694BAC /* textureTriangle.vsh */; };
+		42E4304721BBAD2300694BAC /* textureTriangle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 42E4304521BBAD2300694BAC /* textureTriangle.fsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42CAE35021B6A00D0011EE67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42CAE33121B6A00B0011EE67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42CAE33821B6A00B0011EE67;
+			remoteInfo = DSLRMacViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		429B72FF21B8008C00F880AB /* TriangleEBOView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleEBOView.h; sourceTree = "<group>"; };
+		429B730021B8008C00F880AB /* TriangleEBOView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TriangleEBOView.mm; sourceTree = "<group>"; };
+		42B96E3D21B947A10009D503 /* ShadersView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadersView.h; sourceTree = "<group>"; };
+		42B96E3E21B947A10009D503 /* ShadersView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ShadersView.mm; sourceTree = "<group>"; };
+		42B96E4021B94B8F0009D503 /* fragmentShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragmentShader.fsh; sourceTree = "<group>"; };
+		42B96E4121B94B8F0009D503 /* vertexShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertexShader.vsh; sourceTree = "<group>"; };
+		42B96E4421B94DFE0009D503 /* VertexAttributesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VertexAttributesView.h; sourceTree = "<group>"; };
+		42B96E4521B94DFE0009D503 /* VertexAttributesView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VertexAttributesView.mm; sourceTree = "<group>"; };
+		42B96E4721B94EF80009D503 /* attributes.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = attributes.vsh; sourceTree = "<group>"; };
+		42B96E4821B94EF90009D503 /* attributes.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = attributes.fsh; sourceTree = "<group>"; };
+		42CAE33921B6A00B0011EE67 /* DSLRMacViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSLRMacViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42CAE33C21B6A00B0011EE67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42CAE33D21B6A00B0011EE67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42CAE33F21B6A00B0011EE67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		42CAE34021B6A00B0011EE67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		42CAE34221B6A00D0011EE67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42CAE34521B6A00D0011EE67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42CAE34721B6A00D0011EE67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42CAE34821B6A00D0011EE67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42CAE34A21B6A00D0011EE67 /* DSLRMacViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DSLRMacViewer.entitlements; sourceTree = "<group>"; };
+		42CAE34F21B6A00D0011EE67 /* DSLRMacViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSLRMacViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42CAE35321B6A00D0011EE67 /* DSLRMacViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLRMacViewerTests.m; sourceTree = "<group>"; };
+		42CAE35521B6A00D0011EE67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42CAE35F21B6A0790011EE67 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		42CAE36121B6A1580011EE67 /* TriangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
+		42CAE36221B6A1580011EE67 /* TriangleView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TriangleView.mm; sourceTree = "<group>"; };
+		42CAE36621B6A7150011EE67 /* SKShaderLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SKShaderLoader.cpp; sourceTree = "<group>"; };
+		42CAE36721B6A7150011EE67 /* SKShaderLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SKShaderLoader.hpp; sourceTree = "<group>"; };
+		42CAE36A21B6A8670011EE67 /* passthrough.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = passthrough.vsh; sourceTree = "<group>"; };
+		42CAE36B21B6A8670011EE67 /* passthrough.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = passthrough.fsh; sourceTree = "<group>"; };
+		42CAE36E21B6AAE00011EE67 /* SKRenderingEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SKRenderingEngine.cpp; sourceTree = "<group>"; };
+		42CAE36F21B6AAE00011EE67 /* SKRenderingEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SKRenderingEngine.hpp; sourceTree = "<group>"; };
+		42CAE37121B6AEE70011EE67 /* triangle.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = triangle.vsh; sourceTree = "<group>"; };
+		42CAE37221B6AEE70011EE67 /* triangle.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = triangle.fsh; sourceTree = "<group>"; };
+		42CAE37521B6BE850011EE67 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		42CAE37721B6BF060011EE67 /* usr */ = {isa = PBXFileReference; lastKnownFileType = folder; name = usr; path = ../../../../usr; sourceTree = "<group>"; };
+		42CAE37921B6BF5C0011EE67 /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		42E4303E21BBA9E400694BAC /* NSImage+GLCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+GLCategory.h"; sourceTree = "<group>"; };
+		42E4303F21BBA9E400694BAC /* NSImage+GLCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSImage+GLCategory.m"; sourceTree = "<group>"; };
+		42E4304121BBAC7200694BAC /* TextureTriangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureTriangleView.h; sourceTree = "<group>"; };
+		42E4304221BBAC7200694BAC /* TextureTriangleView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TextureTriangleView.mm; sourceTree = "<group>"; };
+		42E4304421BBAD2300694BAC /* textureTriangle.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = textureTriangle.vsh; sourceTree = "<group>"; };
+		42E4304521BBAD2300694BAC /* textureTriangle.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = textureTriangle.fsh; sourceTree = "<group>"; };
+		42E4304C21BCC18000694BAC /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42CAE33621B6A00B0011EE67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4217E1C021B6C3740075083C /* GLUT.framework in Frameworks */,
+				42CAE37A21B6BF5D0011EE67 /* libglfw.3.2.dylib in Frameworks */,
+				42CAE36021B6A0790011EE67 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42CAE34C21B6A00D0011EE67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		429B72FE21B7F09E00F880AB /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				42CAE36121B6A1580011EE67 /* TriangleView.h */,
+				42CAE36221B6A1580011EE67 /* TriangleView.mm */,
+				429B72FF21B8008C00F880AB /* TriangleEBOView.h */,
+				429B730021B8008C00F880AB /* TriangleEBOView.mm */,
+				42B96E3D21B947A10009D503 /* ShadersView.h */,
+				42B96E3E21B947A10009D503 /* ShadersView.mm */,
+				42B96E4421B94DFE0009D503 /* VertexAttributesView.h */,
+				42B96E4521B94DFE0009D503 /* VertexAttributesView.mm */,
+				42E4304121BBAC7200694BAC /* TextureTriangleView.h */,
+				42E4304221BBAC7200694BAC /* TextureTriangleView.mm */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		42CAE33021B6A00B0011EE67 = {
+			isa = PBXGroup;
+			children = (
+				42CAE33B21B6A00B0011EE67 /* DSLRMacViewer */,
+				42CAE35221B6A00D0011EE67 /* DSLRMacViewerTests */,
+				42CAE33A21B6A00B0011EE67 /* Products */,
+				42CAE35E21B6A0790011EE67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42CAE33A21B6A00B0011EE67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42CAE33921B6A00B0011EE67 /* DSLRMacViewer.app */,
+				42CAE34F21B6A00D0011EE67 /* DSLRMacViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42CAE33B21B6A00B0011EE67 /* DSLRMacViewer */ = {
+			isa = PBXGroup;
+			children = (
+				42E4303C21BBA9BB00694BAC /* AppUtil */,
+				429B72FE21B7F09E00F880AB /* Samples */,
+				42CAE36421B6A6F50011EE67 /* Engine */,
+				42CAE33C21B6A00B0011EE67 /* AppDelegate.h */,
+				42CAE33D21B6A00B0011EE67 /* AppDelegate.m */,
+				42CAE33F21B6A00B0011EE67 /* ViewController.h */,
+				42CAE34021B6A00B0011EE67 /* ViewController.m */,
+				42CAE34221B6A00D0011EE67 /* Assets.xcassets */,
+				42CAE34421B6A00D0011EE67 /* Main.storyboard */,
+				42CAE34721B6A00D0011EE67 /* Info.plist */,
+				42CAE34821B6A00D0011EE67 /* main.m */,
+				42CAE34A21B6A00D0011EE67 /* DSLRMacViewer.entitlements */,
+			);
+			path = DSLRMacViewer;
+			sourceTree = "<group>";
+		};
+		42CAE35221B6A00D0011EE67 /* DSLRMacViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				42CAE35321B6A00D0011EE67 /* DSLRMacViewerTests.m */,
+				42CAE35521B6A00D0011EE67 /* Info.plist */,
+			);
+			path = DSLRMacViewerTests;
+			sourceTree = "<group>";
+		};
+		42CAE35E21B6A0790011EE67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42E4304C21BCC18000694BAC /* SpriteKit.framework */,
+				42CAE37921B6BF5C0011EE67 /* libglfw.3.2.dylib */,
+				42CAE37721B6BF060011EE67 /* usr */,
+				42CAE37521B6BE850011EE67 /* GLUT.framework */,
+				42CAE35F21B6A0790011EE67 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42CAE36421B6A6F50011EE67 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				42CAE36921B6A7D90011EE67 /* Shaders */,
+				42CAE36521B6A6FC0011EE67 /* Util */,
+				42CAE36F21B6AAE00011EE67 /* SKRenderingEngine.hpp */,
+				42CAE36E21B6AAE00011EE67 /* SKRenderingEngine.cpp */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		42CAE36521B6A6FC0011EE67 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				42CAE36721B6A7150011EE67 /* SKShaderLoader.hpp */,
+				42CAE36621B6A7150011EE67 /* SKShaderLoader.cpp */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		42CAE36921B6A7D90011EE67 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				42E4304421BBAD2300694BAC /* textureTriangle.vsh */,
+				42E4304521BBAD2300694BAC /* textureTriangle.fsh */,
+				42B96E4721B94EF80009D503 /* attributes.vsh */,
+				42B96E4821B94EF90009D503 /* attributes.fsh */,
+				42B96E4121B94B8F0009D503 /* vertexShader.vsh */,
+				42B96E4021B94B8F0009D503 /* fragmentShader.fsh */,
+				42CAE37221B6AEE70011EE67 /* triangle.fsh */,
+				42CAE37121B6AEE70011EE67 /* triangle.vsh */,
+				42CAE36B21B6A8670011EE67 /* passthrough.fsh */,
+				42CAE36A21B6A8670011EE67 /* passthrough.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		42E4303C21BBA9BB00694BAC /* AppUtil */ = {
+			isa = PBXGroup;
+			children = (
+				42E4303D21BBA9C400694BAC /* Categories */,
+			);
+			path = AppUtil;
+			sourceTree = "<group>";
+		};
+		42E4303D21BBA9C400694BAC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				42E4303E21BBA9E400694BAC /* NSImage+GLCategory.h */,
+				42E4303F21BBA9E400694BAC /* NSImage+GLCategory.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42CAE33821B6A00B0011EE67 /* DSLRMacViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42CAE35821B6A00D0011EE67 /* Build configuration list for PBXNativeTarget "DSLRMacViewer" */;
+			buildPhases = (
+				42CAE33521B6A00B0011EE67 /* Sources */,
+				42CAE33621B6A00B0011EE67 /* Frameworks */,
+				42CAE33721B6A00B0011EE67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSLRMacViewer;
+			productName = DSLRMacViewer;
+			productReference = 42CAE33921B6A00B0011EE67 /* DSLRMacViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42CAE34E21B6A00D0011EE67 /* DSLRMacViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42CAE35B21B6A00D0011EE67 /* Build configuration list for PBXNativeTarget "DSLRMacViewerTests" */;
+			buildPhases = (
+				42CAE34B21B6A00D0011EE67 /* Sources */,
+				42CAE34C21B6A00D0011EE67 /* Frameworks */,
+				42CAE34D21B6A00D0011EE67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42CAE35121B6A00D0011EE67 /* PBXTargetDependency */,
+			);
+			name = DSLRMacViewerTests;
+			productName = DSLRMacViewerTests;
+			productReference = 42CAE34F21B6A00D0011EE67 /* DSLRMacViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42CAE33121B6A00B0011EE67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = hsg2510;
+				TargetAttributes = {
+					42CAE33821B6A00B0011EE67 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					42CAE34E21B6A00D0011EE67 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 42CAE33821B6A00B0011EE67;
+					};
+				};
+			};
+			buildConfigurationList = 42CAE33421B6A00B0011EE67 /* Build configuration list for PBXProject "DSLRMacViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42CAE33021B6A00B0011EE67;
+			productRefGroup = 42CAE33A21B6A00B0011EE67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42CAE33821B6A00B0011EE67 /* DSLRMacViewer */,
+				42CAE34E21B6A00D0011EE67 /* DSLRMacViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42CAE33721B6A00B0011EE67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CAE34321B6A00D0011EE67 /* Assets.xcassets in Resources */,
+				42B96E4221B94B8F0009D503 /* fragmentShader.fsh in Resources */,
+				42E4304621BBAD2300694BAC /* textureTriangle.vsh in Resources */,
+				42CAE37321B6AEE70011EE67 /* triangle.vsh in Resources */,
+				42CAE36C21B6A8670011EE67 /* passthrough.vsh in Resources */,
+				42B96E4321B94B8F0009D503 /* vertexShader.vsh in Resources */,
+				42B96E4921B94EF90009D503 /* attributes.vsh in Resources */,
+				42CAE37421B6AEE70011EE67 /* triangle.fsh in Resources */,
+				42CAE36D21B6A8670011EE67 /* passthrough.fsh in Resources */,
+				42E4304721BBAD2300694BAC /* textureTriangle.fsh in Resources */,
+				42B96E4A21B94EF90009D503 /* attributes.fsh in Resources */,
+				42CAE34621B6A00D0011EE67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42CAE34D21B6A00D0011EE67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42CAE33521B6A00B0011EE67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CAE37021B6AAE00011EE67 /* SKRenderingEngine.cpp in Sources */,
+				429B730121B8008C00F880AB /* TriangleEBOView.mm in Sources */,
+				42CAE36821B6A7150011EE67 /* SKShaderLoader.cpp in Sources */,
+				42CAE34121B6A00B0011EE67 /* ViewController.m in Sources */,
+				42CAE34921B6A00D0011EE67 /* main.m in Sources */,
+				42B96E3F21B947A10009D503 /* ShadersView.mm in Sources */,
+				42CAE33E21B6A00B0011EE67 /* AppDelegate.m in Sources */,
+				42CAE36321B6A1580011EE67 /* TriangleView.mm in Sources */,
+				42B96E4621B94DFE0009D503 /* VertexAttributesView.mm in Sources */,
+				42E4304321BBAC7200694BAC /* TextureTriangleView.mm in Sources */,
+				42E4304021BBA9E400694BAC /* NSImage+GLCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42CAE34B21B6A00D0011EE67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CAE35421B6A00D0011EE67 /* DSLRMacViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42CAE35121B6A00D0011EE67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42CAE33821B6A00B0011EE67 /* DSLRMacViewer */;
+			targetProxy = 42CAE35021B6A00D0011EE67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42CAE34421B6A00D0011EE67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42CAE34521B6A00D0011EE67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42CAE35621B6A00D0011EE67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42CAE35721B6A00D0011EE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42CAE35921B6A00D0011EE67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DSLRMacViewer/DSLRMacViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8C327VU859;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = DSLRMacViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsg2510.DSLRMacViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42CAE35A21B6A00D0011EE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DSLRMacViewer/DSLRMacViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8C327VU859;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = DSLRMacViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsg2510.DSLRMacViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42CAE35C21B6A00D0011EE67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8C327VU859;
+				INFOPLIST_FILE = DSLRMacViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsg2510.DSLRMacViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSLRMacViewer.app/Contents/MacOS/DSLRMacViewer";
+			};
+			name = Debug;
+		};
+		42CAE35D21B6A00D0011EE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8C327VU859;
+				INFOPLIST_FILE = DSLRMacViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsg2510.DSLRMacViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSLRMacViewer.app/Contents/MacOS/DSLRMacViewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42CAE33421B6A00B0011EE67 /* Build configuration list for PBXProject "DSLRMacViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42CAE35621B6A00D0011EE67 /* Debug */,
+				42CAE35721B6A00D0011EE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42CAE35821B6A00D0011EE67 /* Build configuration list for PBXNativeTarget "DSLRMacViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42CAE35921B6A00D0011EE67 /* Debug */,
+				42CAE35A21B6A00D0011EE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42CAE35B21B6A00D0011EE67 /* Build configuration list for PBXNativeTarget "DSLRMacViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42CAE35C21B6A00D0011EE67 /* Debug */,
+				42CAE35D21B6A00D0011EE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42CAE33121B6A00B0011EE67 /* Project object */;
+}
