@@ -95,7 +95,7 @@ using namespace CP;
     glBindVertexArray(mVAO);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     
-    unsigned int sIndices[] = {  // 0부터 시작한다는 것을 명심하세요!
+    unsigned int sIndices[] = {  // 0부터 시작한다는 것을 명심
         0, 1, 3,   // 첫 번째 삼각형
         1, 2, 3    // 두 번째 삼각형
     };
@@ -106,7 +106,7 @@ using namespace CP;
      저장하는 방법은 VAO가 Binding 되어 있을때 EBO를 Binding 하면 자동으로 저장된다.
      그리고 그리는 시점에 VAO만 Binding을 해도 EBO를 자동으로 Binding 시켜준다.
      */
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,mEBO);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mEBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(sIndices), sIndices, GL_STATIC_DRAW);
     
     /*

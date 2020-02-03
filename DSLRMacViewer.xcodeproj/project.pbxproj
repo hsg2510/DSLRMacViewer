@@ -34,6 +34,7 @@
 		42E4304321BBAC7200694BAC /* TextureTriangleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42E4304221BBAC7200694BAC /* TextureTriangleView.mm */; };
 		42E4304621BBAD2300694BAC /* textureTriangle.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 42E4304421BBAD2300694BAC /* textureTriangle.vsh */; };
 		42E4304721BBAD2300694BAC /* textureTriangle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 42E4304521BBAD2300694BAC /* textureTriangle.fsh */; };
+		4D1BB350231F56E500B14B84 /* CoordinateView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D1BB34F231F56E500B14B84 /* CoordinateView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,9 @@
 		42E4304421BBAD2300694BAC /* textureTriangle.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = textureTriangle.vsh; sourceTree = "<group>"; };
 		42E4304521BBAD2300694BAC /* textureTriangle.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = textureTriangle.fsh; sourceTree = "<group>"; };
 		42E4304C21BCC18000694BAC /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		4D1BB34E231F56E500B14B84 /* CoordinateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateView.h; sourceTree = "<group>"; };
+		4D1BB34F231F56E500B14B84 /* CoordinateView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CoordinateView.mm; sourceTree = "<group>"; };
+		4D4871CB22BC7A9200E03516 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				42B96E4521B94DFE0009D503 /* VertexAttributesView.mm */,
 				42E4304121BBAC7200694BAC /* TextureTriangleView.h */,
 				42E4304221BBAC7200694BAC /* TextureTriangleView.mm */,
+				4D1BB34E231F56E500B14B84 /* CoordinateView.h */,
+				4D1BB34F231F56E500B14B84 /* CoordinateView.mm */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 		42E4303C21BBA9BB00694BAC /* AppUtil */ = {
 			isa = PBXGroup;
 			children = (
+				4D4871CB22BC7A9200E03516 /* stb_image.h */,
 				42E4303D21BBA9C400694BAC /* Categories */,
 			);
 			path = AppUtil;
@@ -355,6 +362,7 @@
 			files = (
 				42CAE37021B6AAE00011EE67 /* SKRenderingEngine.cpp in Sources */,
 				429B730121B8008C00F880AB /* TriangleEBOView.mm in Sources */,
+				4D1BB350231F56E500B14B84 /* CoordinateView.mm in Sources */,
 				42CAE36821B6A7150011EE67 /* SKShaderLoader.cpp in Sources */,
 				42CAE34121B6A00B0011EE67 /* ViewController.m in Sources */,
 				42CAE34921B6A00D0011EE67 /* main.m in Sources */,
@@ -516,7 +524,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 8C327VU859;
+				DEVELOPMENT_TEAM = XMU8SE38MX;
+				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = DSLRMacViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -529,6 +538,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsg2510.DSLRMacViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/DSLRMacViewer/AppUtil";
 			};
 			name = Debug;
 		};
@@ -539,7 +549,8 @@
 				CODE_SIGN_ENTITLEMENTS = DSLRMacViewer/DSLRMacViewer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8C327VU859;
+				DEVELOPMENT_TEAM = XMU8SE38MX;
+				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = DSLRMacViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -552,6 +563,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hsg2510.DSLRMacViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/DSLRMacViewer/AppUtil";
 			};
 			name = Release;
 		};

@@ -10,6 +10,8 @@
 #import "NSImage+GLCategory.h"
 #include <OpenGL/gl3.h>
 #include "SKRenderingEngine.hpp"
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
 
 using namespace CP;
 
@@ -109,15 +111,16 @@ using namespace CP;
     [self bindAndSetup2DTextureConfig:mTexture1];
 
     NSImage *sOnePersonImage = [NSImage imageNamed:@"onePerson"];
-
+    
     [self loadImageToTexture:sOnePersonImage];
+    
 
     glGenTextures(1, &mTexture2);
     glActiveTexture(GL_TEXTURE1);
     [self bindAndSetup2DTextureConfig:mTexture2];
 
     NSImage *sTwoPeopleImage = [NSImage imageNamed:@"twoPeople"];
-
+    
     [self loadImageToTexture:sTwoPeopleImage];
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
@@ -136,7 +139,6 @@ using namespace CP;
     mProgram = SKRenderingEngine::getInstance()->loadMainShader(sVertexSource, sFragSource);
 }
 
-
 - (void)loadImageToTexture:(NSImage *)aImage
 {
     GLubyte *sData = [aImage glByteByConverted];
@@ -153,7 +155,7 @@ using namespace CP;
         7번째, 8번째 파라미터 : 원본 이미지의 포맷과 데이터 타입을 지정한다. unsigned char*(uBytes)로 저장했기 때문에, 해당 값으로 지정.
         마지막 파라미터 : 실제 데이터
       */
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, sWidth, sHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, sData);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, sWidth, sHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, sData);
         glGenerateMipmap(GL_TEXTURE_2D);
     }
     else
