@@ -34,6 +34,8 @@
 		42E4304321BBAC7200694BAC /* TextureTriangleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42E4304221BBAC7200694BAC /* TextureTriangleView.mm */; };
 		42E4304621BBAD2300694BAC /* textureTriangle.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 42E4304421BBAD2300694BAC /* textureTriangle.vsh */; };
 		42E4304721BBAD2300694BAC /* textureTriangle.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 42E4304521BBAD2300694BAC /* textureTriangle.fsh */; };
+		4D08D7FA23F3EF3600F5DA22 /* Libraries in Resources */ = {isa = PBXBuildFile; fileRef = 4D08D7F923F3EF3600F5DA22 /* Libraries */; };
+		4D08D7FC23F3EF5500F5DA22 /* Libraries in Resources */ = {isa = PBXBuildFile; fileRef = 4D08D7FB23F3EF5500F5DA22 /* Libraries */; };
 		4D1BB350231F56E500B14B84 /* CoordinateView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D1BB34F231F56E500B14B84 /* CoordinateView.mm */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,8 @@
 		42E4304421BBAD2300694BAC /* textureTriangle.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = textureTriangle.vsh; sourceTree = "<group>"; };
 		42E4304521BBAD2300694BAC /* textureTriangle.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = textureTriangle.fsh; sourceTree = "<group>"; };
 		42E4304C21BCC18000694BAC /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		4D08D7F923F3EF3600F5DA22 /* Libraries */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Libraries; sourceTree = "<group>"; };
+		4D08D7FB23F3EF5500F5DA22 /* Libraries */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Libraries; sourceTree = SOURCE_ROOT; };
 		4D1BB34E231F56E500B14B84 /* CoordinateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoordinateView.h; sourceTree = "<group>"; };
 		4D1BB34F231F56E500B14B84 /* CoordinateView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CoordinateView.mm; sourceTree = "<group>"; };
 		4D4871CB22BC7A9200E03516 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				42CAE33B21B6A00B0011EE67 /* DSLRMacViewer */,
+				4D08D7F923F3EF3600F5DA22 /* Libraries */,
 				42CAE35221B6A00D0011EE67 /* DSLRMacViewerTests */,
 				42CAE33A21B6A00B0011EE67 /* Products */,
 				42CAE35E21B6A0790011EE67 /* Frameworks */,
@@ -159,6 +164,7 @@
 		42CAE33B21B6A00B0011EE67 /* DSLRMacViewer */ = {
 			isa = PBXGroup;
 			children = (
+				4D08D7FB23F3EF5500F5DA22 /* Libraries */,
 				42E4303C21BBA9BB00694BAC /* AppUtil */,
 				429B72FE21B7F09E00F880AB /* Samples */,
 				42CAE36421B6A6F50011EE67 /* Engine */,
@@ -335,10 +341,12 @@
 				42B96E4221B94B8F0009D503 /* fragmentShader.fsh in Resources */,
 				42E4304621BBAD2300694BAC /* textureTriangle.vsh in Resources */,
 				42CAE37321B6AEE70011EE67 /* triangle.vsh in Resources */,
+				4D08D7FC23F3EF5500F5DA22 /* Libraries in Resources */,
 				42CAE36C21B6A8670011EE67 /* passthrough.vsh in Resources */,
 				42B96E4321B94B8F0009D503 /* vertexShader.vsh in Resources */,
 				42B96E4921B94EF90009D503 /* attributes.vsh in Resources */,
 				42CAE37421B6AEE70011EE67 /* triangle.fsh in Resources */,
+				4D08D7FA23F3EF3600F5DA22 /* Libraries in Resources */,
 				42CAE36D21B6A8670011EE67 /* passthrough.fsh in Resources */,
 				42E4304721BBAD2300694BAC /* textureTriangle.fsh in Resources */,
 				42B96E4A21B94EF90009D503 /* attributes.fsh in Resources */,
